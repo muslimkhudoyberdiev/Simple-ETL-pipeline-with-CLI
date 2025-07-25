@@ -1,0 +1,6 @@
+pandas
+SQLAlchemy
+psycopg2-binary
+typer
+pytest
+python-dotenv 
