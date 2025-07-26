@@ -40,7 +40,7 @@ class PipelineLog(Base):
 class BadRecord(Base):
     __tablename__ = 'bad_records'
     id = Column(Integer, primary_key=True)
-    record_type = Column(String, nullable=False)  # 'catalog' or 'product'
+    record_type = Column(String, nullable=False) 
     data = Column(Text, nullable=False)
     error = Column(Text, nullable=False)
     batch_id = Column(Integer, nullable=False)

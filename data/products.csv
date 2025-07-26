@@ -1,6 +1,8 @@
 product_id,name,price,catalog_id,updated_at
-101,Smartphone,699.99,1,2023-04-01T14:00:00Z
+101,  Smartphone  ,699.99,1,2023-04-01T14:00:00Z
 102,Laptop,1299.49,1,2023-04-02T15:30:00Z
-103,Novel Book,19.99,2,2023-04-03T10:20:00Z
-104,T-Shirt,9.99,3,2023-04-04T11:45:00Z
-105,Jeans,39.99,3,2023-04-05T13:10:00Z 
+102,Laptop Duplicate,1299.49,1,2023-04-02T15:30:00Z
+,Novel Book,19.99,2,2023-04-03T10:20:00Z
+104,T-Shirt,,3,2023-04-04T11:45:00Z
+105,Jeans,39.99,3,not-a-date
+106,ValidProduct,49.99,5,2023-05-02T10:00:00Z 
