@@ -21,7 +21,6 @@ def test_run_etl():
     result = runner.invoke(app, ['run-etl'])
     assert result.exit_code == 0
     assert "ETL completed" in result.output or "ETL failed" in result.output
-    # Check pipeline log
     session = SessionLocal()
     log = session.query(PipelineLog).order_by(PipelineLog.run_at.desc()).first()
     assert log is not None
@@ -34,11 +33,8 @@ def test_show_logs():
     assert "Status:" in result.output
 
 def test_show_bad_records():
-    # Should work even if no bad records
     result = runner.invoke(app, ['show-bad-records'])
     assert result.exit_code == 0
-    # If there are bad records, output should contain 'Error:'
-    # (We don't force a bad record here, but the command should not fail)
 
 def test_etl_creates_batch_id():
     session = SessionLocal()
